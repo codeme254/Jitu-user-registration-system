@@ -1,0 +1,137 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: crimson;
+    --color-black: #111;
+    --color-black-light: #222;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    color: var(--color-black-light);
+}
+
+.header {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header__logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .header__nav-list--item a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    padding: 2rem 3rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all .5s ease;
+  }
+  
+  .header__nav-list--item a:hover {
+    color: #fff;
+    background-color: var(--color-primary);
+  }
+
+  .body-main-form-table{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .body-main-form-table > *{
+    width: 45%;
+  }
+
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  button:hover {
+    background-color: rgba(220, 20, 60, 0.808);
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .users-table {
+    width: 100%;
+    margin: 5rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid var(--color-primary);
+  }
+  
+  .users-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* .users-table tbody tr:nth-of-type(even) {
+    background-color: crimson;
+    color: white;
+  } */
+  

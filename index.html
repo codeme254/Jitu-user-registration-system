@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration system</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="header__logo">JUserRegSystem</h2>
+        <nav class="header__nav">
+            <ol class="header__nav-list">
+                <li class="header__nav-list--item"><a href="">Create user</a></li>
+                <li class="header__nav-list--item"><a href="">all users</a></li>
+                <li class="header__nav-list--item"><a href="">update user info</a></li>
+                <li class="header__nav-list--item"><a href="">delete user</a></li>
+            </ol>
+        </nav>
+    </header>
+    <section class="body-main-form-table">
+        <div class="body__form">
+            <form action="">
+                <div class="form-group">
+                    <label for="username">
+                        username
+                    </label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="id-number">
+                        Id number
+                    </label>
+                    <input type="number" name="id_number" id="id-number">
+                </div>
+                <div class="form-group">
+                    <label for="country">
+                        country
+                    </label>
+                    <select name="country" id="country">
+                        <option value="kenya">kenya</option>
+                        <option value="uganda">uganda</option>
+                        <option value="tanzania">tanzania</option>
+                        <option value="tanzania">tanzania</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="language">
+                        which
+                    </label>
+                    <select name="language" id="language">
+                        <option value="kiswahili">kiswahili</option>
+                        <option value="english">english</option>
+                        <option value="italiano">italiano</option>
+                        <option value="spanish">spanish</option>
+                    </select>
+                </div>
+                <button id="add">add user</button>
+            </form>
+        </div>
+        <div class="table-side">
+            <table class="users-table" id="users-table">
+                <thead>
+                  <tr>
+                      <th>Username</th>
+                      <th>Id number</th>
+                      <th>Country</th>
+                    <th>Language spoken</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>JohnDoe</td>
+                    <td>12345</td>
+                    <td>USA</td>
+                    <td>English</td>
+                </tr>
+                  <tr>
+                    <td>JaneDoe</td>
+                    <td>67890</td>
+                    <td>Canada</td>
+                    <td>English, French</td>
+                  </tr>
+                  <tr>
+                      <td>PedroGarcia</td>
+                      <td>24680</td>
+                      <td>Mexico</td>
+                      <td>Spanish</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section class="allusers">
+        <!-- users table -->
+        
+        
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
