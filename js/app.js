@@ -1,7 +1,7 @@
-// if (!localStorage.getItem("allUsers")) {
+if (!localStorage.getItem("allUsers")) {
   const usersArray = [];
   localStorage.setItem("allUsers", JSON.stringify(usersArray));
-// }
+}
 // save the array to local storage, we use local storage as our database for now
 // localStorage.setItem('allUsers', JSON.stringify(usersArray));
 class User {
